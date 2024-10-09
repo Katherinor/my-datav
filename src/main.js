@@ -1,8 +1,13 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import dataV from "@jiaminghi/data-view";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.use(dataV);
+Vue.use(ElementUI, { size: "small", zIndex: 2000 });
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
